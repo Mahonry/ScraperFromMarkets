@@ -1,0 +1,13 @@
+news_sites:
+  chedrahui:
+      allowed_domains: 'chedraui.com.mx'
+      start_url: 'https://www.chedraui.com.mx/Departamentos/Tecnolog%C3%ADa/Telefon%C3%ADa/Celular/c/MC230202?siteName=Sitio+de+Chedraui&isAlcoholRestricted=false'
+      queries:
+        productos: '//div[@class="wrap-text-hook wrap-text plp-grid-word-break"]/a/@href'
+        next_page: '//ul[@class="pagination"]/li[@class="pagination-next"]/a/@href'
+        nombre: '//div[@class="product-details page-title"]/div[@class="product-details-name name"]/text()'
+        precio: '//div[@class="add-to-cart-container col-lg-7"]/p/text()'
+        codigo: '//div[@class="sku-code-pdp"]/span[@class="code"]/text()'
+
+
+ 
